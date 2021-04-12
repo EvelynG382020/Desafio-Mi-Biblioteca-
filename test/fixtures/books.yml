@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  author: MyString
+  status: 1
+  given: 2021-04-12
+  returned: 2021-04-12
+
+two:
+  title: MyString
+  author: MyString
+  status: 1
+  given: 2021-04-12
+  returned: 2021-04-12
