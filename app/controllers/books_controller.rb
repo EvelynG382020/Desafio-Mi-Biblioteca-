@@ -3,11 +3,7 @@ class BooksController < ApplicationController
 
     def index
         @q = Book.ransack(params[:q])
-        #ransack recibe la query de búsqueda a través del parámetro :q
-        @books = @q.result(distinct: true)
-        #filtro de búsqueda y/o tablas ordenables
-
-        #@books = Book.published.page(params[:page])
+        @books = @q.result(distinct: true).page(params[:page])
     end
 
     def show
